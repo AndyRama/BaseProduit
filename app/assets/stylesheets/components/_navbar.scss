@@ -18,13 +18,27 @@
     padding-top: 5px;
   }
   border-radius: 50%;
-  background: #1EDD88;
+  background: #fdfdfd;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .logo:hover {
-  background: #1BCB7F;
+  background: #fdfdfd;
   transition: background 0.3s ease;
+}
+
+.btn-ghost {
+  color: #4A4A4A;
+  border: 1px solid #4A4A4A;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.btn-ghost:hover {
+  opacity: 1;
 }

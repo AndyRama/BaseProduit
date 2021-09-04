@@ -12,7 +12,7 @@
     <ul class="navbar-nav mr-auto">
       <% if user_signed_in? %>
         <li class="nav-item">
-          <%= link_to "Get in touch", "/contact", class: "btn btn-gradient" %>
+          <%= link_to "Get in touch", "/contact", class: "btn btn-ghost" %>
         </li>
         <li class="nav-item">
           <%= link_to "Home", "#", class: "nav-link" %>
@@ -21,14 +21,11 @@
           <%= link_to "Projets", "#", class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Contact", "#", class: "nav-link" %>
-        </li>
-        <li class="nav-item">
           <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link" %>
         </li>
       <% else %>
         <li class="nav-item">
-          <%= link_to "Get in touch", "/contact", class: "btn btn-gradient" %>
+          <%= link_to "Get in touch", "/contact", class: "btn btn-ghost "%>
         </li>
         <li class="nav-item">
           <%= link_to "Login", new_user_session_path, class: "nav-link" %>

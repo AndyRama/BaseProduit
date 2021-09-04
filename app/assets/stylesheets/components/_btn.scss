@@ -1,14 +1,30 @@
-.btn-gradient {
+.btn-login {
   color: white;
   padding: 8px 24px;
   border-radius: 4px;
   font-weight: bold;
-  background: linear-gradient(#167FFB, #0F60C4);
+  background: linear-gradient(#f81616,#f87305 );
   transition: background 0.3s ease;
-  border: 1px solid #0F60C4;
+  // border: 1px solid black;
+  margin-right: 5px;
 }
 
-.btn-gradient:hover {
-  background: linear-gradient(#147EFF, #0F67DA);
+.btn-login:hover {
+  background: linear-gradient(#f87305, #f81616);
+  // color: white;
+}
+
+.btn-signup {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: linear-gradient(#57fa16, #ece93a);
+  transition: background 0.3s ease;
+  display: inline-block;
+}
+
+.btn-signup:hover {
+  background: linear-gradient(#ece93a, #57fa16);
   color: white;
 }
