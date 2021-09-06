@@ -8,6 +8,8 @@ background-color: white;
   padding: 150px 0;
   height: 100%;
   // background-color: #726f7c;
+  margin: 15px 15px 15px 15px;
+ background-image: url("images/feature page.png");
 }
 
 .banner h1 {
@@ -42,4 +44,14 @@ background-color: white;
 .btn-banner:hover {
   opacity: 1;
   background-color: white;
+}
+
+.image-project {
+width: 600px;
+position: relative;
+display: flex;
+align-content: flex-end;
+margin-bottom: -10rem;
+margin-left: 50rem;
+height: 420px;
 }
