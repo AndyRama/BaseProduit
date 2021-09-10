@@ -1,34 +1,7 @@
 .banner {
   background-size: cover;
   background-position: center;
-  padding: 20px 0;
-  margin-top:-45vh;
-  background-color: white;
-  height: 50vh;
-  // margin-right: 5vh;
-}
-.icon {
-  height: 40px;
-  width: 30px;
-  margin-top: 10px;
-  // border: 1px solid white;
-  // background: #F4F4F4;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.stack {
-flex-direction: column-reverse;
-}
-
-.image {
-  margin-left: 24px;
-  margin-top: 24px;
-  margin-bottom: 15px;
-  
-  &_street {
-  color: white !important;
-  }
+  padding: 150px 0;
 }
 
 .banner h1 {
@@ -45,22 +18,3 @@ flex-direction: column-reverse;
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
-
-
-.btn-banner {
-  color: black;
-  border: 1px solid #4A4A4A;
-  padding: 8px 24px;
-  border-radius: 50px;
-  font-weight: lighter;
-  opacity: 0.6;
-  transition: opacity 0.3s ease;
-  margin-top: 14px;
-  background-color: white;
-}
-
-.btn-banner:hover {
-  opacity: 1;
-  background-color: white;
-}
-

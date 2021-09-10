@@ -1,28 +1,19 @@
-.btn-login {
-  color: white;
+.btn-banner {
+  border: 2px solid white;
   padding: 8px 24px;
-  border-radius: 4px;
-  font-weight: bold;
-  background: linear-gradient(#f81616,#f87305 );
-  transition: background 0.3s ease;
-  margin-right: 5px;
-}
-
-.btn-login:hover {
-  background: linear-gradient(#f87305, #f81616);
-}
-
-.btn-signup {
+  font-weight: lighter;
+  transition: opacity 0.3s ease;
+  margin-left: 5px;
+  text-align:center;
+  opacity: 0,6;
   color: white;
-  padding: 8px 24px;
-  border-radius: 4px;
-  font-weight: bold;
-  background: linear-gradient(#57fa16, #ece93a);
-  transition: background 0.3s ease;
-  display: inline-block;
+  border-radius: 5px;
+  // margin-top: 5px;
+  width: 100px;
+  // justify-content: center;
 }
 
-.btn-signup:hover {
-  background: linear-gradient(#ece93a, #57fa16);
-  color: white;
+.btn-banner:hover {
+  opacity: 1;
 }
+
