@@ -1,5 +1,5 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to "#", class: "navbar-brand" do %>
+  <%= link_to "/", class: "navbar-brand" do %>
     <%= image_tag "logo.png" %>
     <% end %>
 
@@ -12,20 +12,23 @@
     <ul class="navbar-nav mr-auto">
       <% if user_signed_in? %>
         <li class="nav-item">
-          <%= link_to "Contact", "/contact", class: "btn btn-ghost" %>
+          <%= link_to "Home", "/", class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Home", "#", class: "nav-link" %>
-        </li>
-        <li class="nav-item active">
-          <%= link_to "Projets", "#", class: "nav-link" %>
+          <%= link_to "Contact", "/contact", class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link" %>
+          <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link btn btn-ghost" %>
         </li>
       <% else %>
         <li class="nav-item">
-          <%= link_to "Contact", "/contact", class: "nav-link btn btn-ghost mt-1"%>
+          <%= link_to "Contact", "/contact", class: "nav-link btn btn-ghost  mt-1"%>
+        </li>
+       <li class="nav-item">
+          <%= link_to "Github", "https://github.com/AndyRama", class: "nav-link btn btn-ghost mt-1", target:"new" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Linkedin", "https://www.linkedin.com/in/andy-ramaroson", class: "nav-link btn btn-ghost mt-1", target:"new" %>
         </li>
         <li class="nav-item">
           <%= link_to "Login", new_user_session_path, class: "nav-link btn btn-ghost mt-1" %>
