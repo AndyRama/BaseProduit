@@ -13,10 +13,11 @@
     </div>
     <div class="row">
       <div class="form-actions">
-        <%= f.button :submit, "Log in",class: "btn-ghost"%>
+        <%= f.button :submit, "Log in",class: "btn btn-ghost mt-1"%>
       </div>
       <div class="form-actions">
-         <%= link_to "Sign Up", new_user_registration_path,class: "btn-ghost"%>
+         <%= link_to "Sign Up", new_user_registration_path,class: "btn btn-ghost mt-1"%>
+         <%= link_to "Back", "/",class: "btn btn-ghost mt-1"%> 
       </div>
     </div>
   <% end %>

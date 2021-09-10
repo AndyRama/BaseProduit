@@ -1,6 +1,5 @@
 .navbar-lewagon {
   justify-content: space-between;
-  // background:linear-gradient(rgb(0,218,214),rgb(0,218,214));
   background-color: white;
 }
 
@@ -13,17 +12,17 @@
 }
 
 .logo {
+  background: #fdfdfd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   img {
     width: 40px;
     height: 150px;
     padding-top: 5px;
     margin-bottom: 5px;
-  
   }
-    background: #fdfdfd;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .logo:hover {

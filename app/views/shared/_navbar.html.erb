@@ -12,23 +12,17 @@
     <ul class="navbar-nav mr-auto">
       <% if user_signed_in? %>
         <li class="nav-item">
-          <%= link_to "Home", "/", class: "nav-link" %>
+          <%= link_to "Home", "/", class: "nav-link btn btn-ghost" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Contact", "/contact", class: "nav-link" %>
+          <%= link_to "Contact", "/contact", class: "nav-link btn btn-ghost mt-1" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link btn btn-ghost" %>
+          <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link btn btn-ghost mt-1" %>
         </li>
       <% else %>
         <li class="nav-item">
           <%= link_to "Contact", "/contact", class: "nav-link btn btn-ghost  mt-1"%>
-        </li>
-       <li class="nav-item">
-          <%= link_to "Github", "https://github.com/AndyRama", class: "nav-link btn btn-ghost mt-1", target:"new" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Linkedin", "https://www.linkedin.com/in/andy-ramaroson", class: "nav-link btn btn-ghost mt-1", target:"new" %>
         </li>
         <li class="nav-item">
           <%= link_to "Login", new_user_session_path, class: "nav-link btn btn-ghost mt-1" %>
