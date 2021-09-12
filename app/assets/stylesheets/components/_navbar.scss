@@ -29,3 +29,23 @@
   background: black;
   transition: background 0.3s ease;
 }
+
+#icon {
+  color: black;
+  font-size: 30px;
+  transform: rotate(180deg);
+  animation: rotate 0.8s both;
+  -webkit-animation: rotate 0.8s both;
+  text-decoration: none;
+  // padding-left: 15px;
+  // margin-left: 5px;s
+  @keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);}
+  }
+}
