@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   get "/contact" => "pages#contact", as: :compte
+  get "/mvp" => "pages#mvp", as: :mvp
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
