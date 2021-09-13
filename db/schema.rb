@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_13_104947) do
+ActiveRecord::Schema.define(version: 2021_09_13_102934) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,25 +25,6 @@ ActiveRecord::Schema.define(version: 2021_09_13_104947) do
     t.index ["project_id"], name: "index_cards_on_project_id"
   end
 
-  create_table "challenges", force: :cascade do |t|
-    t.string "description"
-    t.string "task"
-    t.bigint "project_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["project_id"], name: "index_challenges_on_project_id"
-  end
-
-  create_table "clients", force: :cascade do |t|
-    t.string "name"
-    t.string "location"
-    t.string "stack"
-    t.bigint "project_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["project_id"], name: "index_clients_on_project_id"
-  end
-
   create_table "projects", force: :cascade do |t|
     t.string "name"
     t.string "intro"
@@ -53,15 +34,6 @@ ActiveRecord::Schema.define(version: 2021_09_13_104947) do
     t.string "image_bsd"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "solutions", force: :cascade do |t|
-    t.string "description"
-    t.string "task"
-    t.bigint "project_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["project_id"], name: "index_solutions_on_project_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -77,7 +49,4 @@ ActiveRecord::Schema.define(version: 2021_09_13_104947) do
   end
 
   add_foreign_key "cards", "projects"
-  add_foreign_key "challenges", "projects"
-  add_foreign_key "clients", "projects"
-  add_foreign_key "solutions", "projects"
 end

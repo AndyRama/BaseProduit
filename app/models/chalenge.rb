@@ -1,2 +1,0 @@
-class Chalenge < ApplicationRecord
-end

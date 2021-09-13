@@ -5,8 +5,8 @@ class CreateProjects < ActiveRecord::Migration[6.1]
       t.string :intro
       t.string :category
       t.string :description
-      t.string :images
-      t.string :image_bsd
+      t.string :heroku_link
+      t.string :git_link
       
       t.timestamps
     end
