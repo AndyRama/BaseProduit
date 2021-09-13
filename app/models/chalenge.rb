@@ -1,0 +1,2 @@
+class Chalenge < ApplicationRecord
+end
