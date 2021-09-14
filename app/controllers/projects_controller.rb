@@ -1,11 +1,10 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home]
-  skip_before_action :authenticate_user!, only: [:contact]
+  skip_before_action :authenticate_user!, only: [:index]
 
-  def home
+  def index
     @projects = Project.all
   end
-  
+
   def show
     @project = Project.find(params[:id])
   end
@@ -48,4 +47,3 @@ class PagesController < ApplicationController
   def project_params
     params.require(:project).permit(:name, :photo, :heroku, :git, :user_id)
   end
-end
