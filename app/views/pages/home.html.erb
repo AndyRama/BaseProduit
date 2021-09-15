@@ -18,12 +18,10 @@
         <div class="container">
           <span><%= project.category %></span>
           <h2 id="name"><%= project.name %></h2>
-          <div class="footer-card">
-            <a class="btn-cards-heroku" href="<%= project.heroku %>" target="new"> <%= image_tag 'heroku.png' %></a>   
-            <a class="btn-cards-git" href="<%= project.git %>" target="new"><i class="fab fa-github"></i></a>
-            <a class="btn-cards-chevron fas fa-chevron-right" href="#"></a>   
-          </div>
-       </div>
+          <a class="btn-cards-heroku" href="<%= project.heroku %>" target="new"> <%= image_tag 'heroku.png' %></a>   
+          <a class="btn-cards-git" href="<%= project.git %>" target="new"><i class="fab fa-github"></i></a>
+          <a class="btn-cards-chevron fas fa-chevron-right" href="#"></a>       
+        </div>
       </div>
     <% end %>
   </div>

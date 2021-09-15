@@ -35,7 +35,7 @@ puts "\nCreating 1 project"
 # end
 
 
-project1 = Project.new(name: "PortfolioV1.2",category:"Web App.", heroku: "#", git: "https://github.com/AndyRama/Rubyportfolio", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631278053/portfolioV1.2_va5nqu.png", user_id: andy.id)
+project1 = Project.new(name: "PortfolioV1.2",category:"Web App.", heroku: "https://portfolio-andyramaroson.herokuapp.com/", git: "https://github.com/AndyRama/Rubyportfolio", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631278053/portfolioV1.2_va5nqu.png", user_id: andy.id)
 if project1.save
   print '.'
 else
