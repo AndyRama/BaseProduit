@@ -39,14 +39,14 @@ else
 end
 
 
-project3 = Project.new(name: "Location Property", heroku: "https://andycave.herokuapp.com", git: "https://github.com/AndyRama/andycave", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1620747795/home_page_munt8f.png", user_id: andy.id)
+project3 = Project.new(name: "Location Property", heroku: "https://location-property-andy.herokuapp.com", git: "https://github.com/AndyRama/location_property", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1620747795/home_page_munt8f.png", user_id: andy.id)
 if project3.save
   print '.'
 else
   print '_'
 end
 
-project4 = Project.new(name: "My city View", heroku: "https://location-property-andy.herokuapp.com", git: "https://github.com/AndyRama/location_property", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631277311/My_street_view_x1ujsb.png", user_id: andy.id)
+project4 = Project.new(name: "My city View", heroku: "https://my-street-view.herokuapp.com", git: "https://github.com/AndyRama/My_Street_View", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631277311/My_street_view_x1ujsb.png", user_id: andy.id)
 if project4.save
   print '.'
 else

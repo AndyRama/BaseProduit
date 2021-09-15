@@ -1,20 +1,16 @@
 <%= render 'shared/banner' %>
-<div class="container-flex">
-  <div class="cards">  
-    <% @projects.each do |project| %>
-      <div class="row">
-        <div class="cards" id="carts">
-          <div class="card-category" id="img" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(<%= project.photo %>)">
-            <div class="container ">
-              <h2><%= project.name %></h2>   
-              <a class="btn-cards-heroku" href="<%= project.heroku %>" target="new"><%= image_tag 'heroku.png' %></a>   
-              <a class="btn-cards-git" href="<% project.git %>" target="new"><i class="fab fa-github"></i></a>
-              <a class="btn-cards-chevron fas fa-chevron-right" href="#"></a>   
-            </div>
-          </div>
-        </div>
+<div class="container-flex"> 
+  <div class="cards">
+  <% @projects.each do |project| %>
+   <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= project.photo %>)">
+      <div class="container">
+        <h2><%= project.name %></h2>
+        <a class="btn-cards-heroku" href="<%= project.heroku %>" target="new"> <%= image_tag 'heroku.png' %></a>   
+        <a class="btn-cards-git" href="<%= project.git %>" target="new"><i class="fab fa-github"></i></a>
+        <a class="btn-cards-chevron fas fa-chevron-right" href="#"></a>   
       </div>
-    <% end %>
+    </div>
+  <% end %>
   </div>
 </div>
 <%= render 'shared/footer' %>
