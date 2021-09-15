@@ -39,14 +39,14 @@ else
 end
 
 
-project3 = Project.new(name: "Location Property", heroku: "https://andycave.herokuapp.com", git: "https://github.com/AndyRama/andycave", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631277312/My_garden_Manager_bnv58n.png", user_id: andy.id)
+project3 = Project.new(name: "Location Property", heroku: "https://andycave.herokuapp.com", git: "https://github.com/AndyRama/andycave", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1620747795/home_page_munt8f.png", user_id: andy.id)
 if project3.save
   print '.'
 else
   print '_'
 end
 
-project4 = Project.new(name: "My city View", heroku: "https://location-property-andy.herokuapp.com", git: "https://github.com/AndyRama/location_property", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1620747795/home_page_munt8f.png", user_id: andy.id)
+project4 = Project.new(name: "My city View", heroku: "https://location-property-andy.herokuapp.com", git: "https://github.com/AndyRama/location_property", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631277311/My_street_view_x1ujsb.png", user_id: andy.id)
 if project4.save
   print '.'
 else
@@ -54,48 +54,48 @@ else
 end
 
 
-project5 = Project.new(name: "Computer Shop", heroku: "https://andycave.herokuapp.com", git: "https://github.com/AndyRama/andycave", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631277312/My_garden_Manager_bnv58n.png", user_id: andy.id)
+project5 = Project.new(name: "Computer Shop", heroku: "https://computers-shop.herokuapp.com", git: "https://github.com/AndyRama/computer_shop", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631277311/Computers_shop_pkblg6.png", user_id: andy.id)
 if project5.save
   print '.'
 else
   print '_'
 end
-project6 = Project.new(name: "PortfolioV1.1", heroku: "https://location-property-andy.herokuapp.com", git: "https://github.com/AndyRama/location_property", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1620747795/home_page_munt8f.png", user_id: andy.id)
+project6 = Project.new(name: "PortfolioV1.1", heroku: "https://andyrama.github.io/Portfolio",git:"https://github.com/AndyRama/portfolio", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/v1631277313/PortfolioBanner_xgwtuj.png", user_id: andy.id)
 if project6.save
   print '.'
 else
   print '_'
 end
 
-project7 = Project.new(name: "Garden Manager", heroku: "https://andycave.herokuapp.com", git: "https://github.com/AndyRama/andycave", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631277312/My_garden_Manager_bnv58n.png", user_id: andy.id)
+project7 = Project.new(name: "Garden Manager", heroku: "https://garden-manager-bordeaux.herokuapp.com", git: "https://github.com/AndyRama/rails-garden-manager", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631277312/My_garden_Manager_bnv58n.png", user_id: andy.id)
 if project7.save
   print '.'
 else
   print '_'
 end
 
-project8 = Project.new(name: " My Cave", heroku: "https://andycave.herokuapp.com", git: "https://github.com/AndyRama/andycave", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631277312/My_garden_Manager_bnv58n.png", user_id: andy.id)
+project8 = Project.new(name: " My Cave", heroku: "https://andycave.herokuapp.com", git: "https://github.com/AndyRama/andycave", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631286913/My_cave_rzznio.png", user_id: andy.id)
 if project8.save
   print '.'
 else
   print '_'
 end
 
-project9 = Project.new(name: "Mister Cocktails", heroku: "https://andycave.herokuapp.com", git: "https://github.com/AndyRama/andycave", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631277312/My_garden_Manager_bnv58n.png", user_id: andy.id)
+project9 = Project.new(name: "Mister Cocktails", heroku: "https://cocktail-le-wagon-sapporo.herokuapp.com", git: "https://github.com/AndyRama/rails-mister-cocktail", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631286884/Mister_cocktails_girily.png", user_id: andy.id)
 if project9.save
   print '.'
 else
   print '_'
 end
 
-project10 = Project.new(name: "Airbnb Clone", heroku: "https://andycave.herokuapp.com", git: "https://github.com/AndyRama/andycave", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631277312/My_garden_Manager_bnv58n.png", user_id: andy.id)
+project10 = Project.new(name: "Airbnb Clone", heroku: "https://rails-simple-airbnb.herokuapp.com", git: "https://github.com/AndyRama/rails-clone-airbnb", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/v1631286951/Rbnb_qbtdeb.png", user_id: andy.id)
 if project10.save
   print '.'
 else
   print '_'
 end
 
-project11 = Project.new(name: "Quovery", heroku: "https://andycave.herokuapp.com", git: "https://github.com/AndyRama/andycave", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631277312/My_garden_Manager_bnv58n.png", user_id: andy.id)
+project11 = Project.new(name: "Quovery", heroku: "#", git: "https://github.com/AndyRama/quovery", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631277312/My_garden_Manager_bnv58n.png", user_id: andy.id)
 if project11.save
   print '.'
 else
