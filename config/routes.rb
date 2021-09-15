@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
   root to: 'pages#home'
-  devise_for :users
+  devise_for :users  
+  resource :projects, only:[:home]
   
-  resources :projects
-  resources :users
 
   get "/home" => "pages#home", as: :home
   get "/contact" => "pages#contact", as: :compte
