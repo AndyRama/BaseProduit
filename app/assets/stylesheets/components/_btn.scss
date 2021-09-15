@@ -84,9 +84,61 @@
   padding-top: 2px;
   margin-top: 84px;
   height: 34px;
+  opacity: 0;
 }
 .btn-cards-chevron:hover {
   border: 2px solid black;
   background-color: white; 
 }
 
+//BTN card New project
+
+.btn-cards-user {
+  text-decoration: none !important;
+ img{
+    width:37px;
+    height:33px;
+    margin-top: -3px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: black;
+  }
+}
+
+.btn-cards-bsd {
+  text-decoration: none !important;
+  img{
+    width:37px;
+    height:33px;
+    margin-top: -3px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: black;
+  }
+}
+.btn-cards-trello {
+  width: 30px;
+  text-decoration: none !important;
+
+  img{
+    width:37px;
+    height:33px;
+    margin-top: -3px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+  }
+}
+.btn-cards-figma {
+  width: 30px;
+  text-decoration: none !important;
+  img{
+    width:37px;
+    height:33px;
+    margin-top: -3px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: black;
+  }
+}

@@ -46,6 +46,6 @@ class PagesController < ApplicationController
   private
   
   def project_params
-    params.require(:project).permit(:name, :photo, :heroku, :git, :user_id)
+    params.require(:project).permit(:name, :photo, :heroku, :git, :user_id, :category)
   end
 end
