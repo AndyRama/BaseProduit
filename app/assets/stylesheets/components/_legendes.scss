@@ -7,12 +7,15 @@
   margin-bottom: 5px;
   overflow: hidden;                     /* masque tout ce qui dépasse */
   box-shadow: 0 .25em .5em #CCC,inset 0 0 1em .25em #CCC;
+ 
   img {
     height: 30px !important;
   }
-
+  #icon {
+    height:23px!important;
+    margin-top: 1px;
+  }
 }
-
 
 /* le bloc défilant */
 .marquee-rtl > :first-child {
