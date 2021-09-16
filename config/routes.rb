@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   resources :projects, only:[:home]
   
   get "/home" => "pages#home", as: :home
-  get "/contact" => "pages#contact", as: :compte
+  get "/contact" => "pages#contact", as: :contact
   get "/profile" => "pages#profile", as: :profile
 end
