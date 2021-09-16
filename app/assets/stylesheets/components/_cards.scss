@@ -35,6 +35,16 @@
   opacity: 0.8;  
   color: white;
 }
+.card-small{
+  display: flex;
+  background-color: GRAY;
+  background-size: cover;
+color: white;
+}
+#small-card {          
+  width: 70%
+  
+}
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {

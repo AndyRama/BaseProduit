@@ -1,10 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
 puts "Suppression des Project tant qu'ils ne seront pas unique)"
 
 Project.destroy_all
@@ -16,9 +9,17 @@ print " - "
 print " Déjà existant: '-'"
 print " - "
 print " Création echouée: 'X'"
-puts "\n\n Création de 1 Utilisateurs"
+
+puts "\n\n Création de 2 Utilisateurs"
 
 andy = User.new(email:"andy@gmail.com", password:"09121984", password_confirmation:"09121984")
+if andy.save
+  print '.'
+else
+  print '_'
+end
+
+recruteur = User.new(email:"recruteur@gmail.com", password:"Pbxk1064", password_confirmation:"Pbxk1064")
 if andy.save
   print '.'
 else
@@ -117,22 +118,8 @@ else
   print '_'
 end
 
-# project13 = Project.new(name: "Landing Page",category:"Intégration", heroku: "https://andyrama.github.io/landing/", git: "https://github.com/AndyRama/landing", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631709961/landing_j2yfju.png", user_id: andy.id)
+# project13 = Project.new(name: "Geocoding",category:"API", heroku: "https://geocoding-mvp.herokuapp.com/flats", git: "https://github.com/AndyRama/geocoding", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631749737/mapboxAPI_luiwpi.png", user_id: andy.id)
 # if project13.save
-#   print '.'
-# else
-#   print '_'
-# end
-
-# project14 = Project.new(name: "New Project",category:"Intégration", heroku:"#",git:"#",photo: "https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631711959/products_gnxhm5.png", user_id: andy.id)
-# if project14.save
-#   print '.'
-# else
-#   print '_'
-# end
-
-# project15 = Project.new(name: "Landing P.",category:"Intégration", heroku: "https://andyrama.github.io/landing/", git: "https://github.com/AndyRama/landing", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631709961/landing_j2yfju.png", user_id: andy.id)
-# if project15.save
 #   print '.'
 # else
 #   print '_'
