@@ -4,8 +4,7 @@ Rails.application.routes.draw do
 
   resources :projects, only:[:home]
   
-
   get "/home" => "pages#home", as: :home
   get "/contact" => "pages#contact", as: :compte
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get "/profile" => "pages#profile", as: :profile
 end

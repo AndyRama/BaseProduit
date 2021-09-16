@@ -15,18 +15,30 @@
           <%= link_to "Home", "/", class: "nav-link btn btn-ghost mt-1" %>
         </li>
         <li class="nav-item">
+          <%= link_to "Profile", "/profile", class: "nav-link btn btn-ghost mt-1" %>
+        </li>
+        <li class="nav-item">
           <%= link_to "Contact", "/contact", class: "nav-link btn btn-ghost mt-1" %>
         </li>
         <li class="nav-item">
           <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link btn btn-ghost mt-1" %>
         </li>
+        <% if current_user. == User.first %>
+          <%= image_tag 'avatar.png',class: "avatar-bordered", alt: "avatar-bordered" %>
+        <% else %>
+          <%= image_tag 'avatar.jpg',class: "avatar-bordered", alt: "avatar-bordered" %>
+        <% end %>
       <% else %>
         <li class="nav-item">
           <%= link_to "Contact", "/contact", class: "nav-link btn btn-ghost  mt-1"%>
         </li>
         <li class="nav-item">
+          <%= link_to "Profile", "/profile", class: "nav-link btn btn-ghost mt-1" %>
+        </li>
+        <li class="nav-item">
           <%= link_to "Login", new_user_session_path, class: "nav-link btn btn-ghost mt-1" %>
         </li>
+        <%= image_tag 'avatar.png',class: "avatar-bordered", alt: "avatar-bordered" %>
       <% end %>
     </ul>
   </div>

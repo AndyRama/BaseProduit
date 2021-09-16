@@ -20,7 +20,7 @@ else
 end
 
 recruteur = User.new(email:"recruteur@gmail.com", password:"Pbxk1064", password_confirmation:"Pbxk1064")
-if andy.save
+if recruteur.save
   print '.'
 else
   print '_'
@@ -28,12 +28,12 @@ end
 
 puts "\nCreating 12 projets"
 
-# project = Project.new(name: "Parentally", category:"Front-End.", heroku: "#", git: "https://github.com/AndyRama/parentally", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631277873/kid-playing-with-pregnant-belly_lfqlta.jpg", user_id: andy.id)
-# if project.save
-#   print '.'
-# else
-#   print '_'
-# end
+project = Project.new(name: "Parentally", category:"Front-End.", heroku: "#", git: "https://github.com/AndyRama/parentally", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631277873/kid-playing-with-pregnant-belly_lfqlta.jpg", user_id: andy.id)
+if project.save
+  print '.'
+else
+  print '_'
+end
 
 project1 = Project.new(name: "PortfolioV1.2",category:"Full-Stack.", heroku: "https://portfolio-andyramaroson.herokuapp.com/", git: "https://github.com/AndyRama/Rubyportfolio", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631748301/portfolioV1.2_ywervv.png", user_id: andy.id)
 if project1.save
@@ -83,35 +83,35 @@ else
   print '_'
 end
 
-project8 = Project.new(name: "CovidList",category:"Front-End.", heroku: "https://covidfile.herokuapp.com", git: "https://github.com/AndyRama/covidfile", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631748300/covidfile_juavzg.png", user_id: andy.id)
+project8 = Project.new(name: "PortfolioV1.1",category:"Front-End.", heroku: "https://andyrama.github.io/Portfolio",git:"https://github.com/AndyRama/portfolio", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/v1631277313/PortfolioBanner_xgwtuj.png", user_id: andy.id)
 if project8.save
   print '.'
 else
   print '_'
 end
 
-project9 = Project.new(name: "PortfolioV1.1",category:"Front-End.", heroku: "https://andyrama.github.io/Portfolio",git:"https://github.com/AndyRama/portfolio", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/v1631277313/PortfolioBanner_xgwtuj.png", user_id: andy.id)
+project9 = Project.new(name: "Mister Cocktails",category:"Full-Stack.", heroku: "https://cocktail-le-wagon-sapporo.herokuapp.com", git: "https://github.com/AndyRama/rails-mister-cocktail", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631286884/Mister_cocktails_girily.png", user_id: andy.id)
 if project9.save
   print '.'
 else
   print '_'
 end
 
-project10 = Project.new(name: "Mister Cocktails",category:"FullStack.", heroku: "https://cocktail-le-wagon-sapporo.herokuapp.com", git: "https://github.com/AndyRama/rails-mister-cocktail", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631286884/Mister_cocktails_girily.png", user_id: andy.id)
+project10 = Project.new(name: "Airbnb Clone",category:"Full-Stack.", heroku: "https://rails-simple-airbnb.herokuapp.com", git: "https://github.com/AndyRama/rails-clone-airbnb", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/v1631286951/Rbnb_qbtdeb.png", user_id: andy.id)
 if project10.save
   print '.'
 else
   print '_'
 end
 
-project11 = Project.new(name: "Airbnb Clone",category:"FullStack.", heroku: "https://rails-simple-airbnb.herokuapp.com", git: "https://github.com/AndyRama/rails-clone-airbnb", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/v1631286951/Rbnb_qbtdeb.png", user_id: andy.id)
+project11 = Project.new(name: "Quovery",category:"Front-End.", heroku: "#", git: "https://github.com/AndyRama/quovery", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631704622/quovery_aahdav.png", user_id: andy.id)
 if project11.save
   print '.'
 else
   print '_'
 end
 
-project12 = Project.new(name: "Quovery",category:"Front-End.", heroku: "#", git: "https://github.com/AndyRama/quovery", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631704622/quovery_aahdav.png", user_id: andy.id)
+project12 = Project.new(name: "CovidList",category:"Front-End.", heroku: "https://covidfile.herokuapp.com", git: "https://github.com/AndyRama/covidfile", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631748300/covidfile_juavzg.png", user_id: andy.id)
 if project12.save
   print '.'
 else

@@ -3,7 +3,6 @@
   grid-template-columns: 1fr 1fr ;
   grid-gap: 16px;
   background-color: white;
-  margin-top: 5px;
 }
 
 .cards-footer {
@@ -15,7 +14,6 @@
   background-size: cover;
   background-position: center;
   height: 180px;
-  // display: flex;
   justify-content: center;
   align-items: center;
   color: white;
@@ -35,21 +33,26 @@
   opacity: 0.8;  
   color: white;
 }
-.card-small{
-  display: flex;
-  background-color: GRAY;
-  background-size: cover;
-color: white;
-}
-#small-card {          
-  width: 70%
-  
-}
+
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .cards {
     grid-template-columns: 1fr;
+  }
+  .avatar-bordered {
+    opacity: 0;
+    height: 5px;
+  }
+  .footer-copyright { 
+    font-size: 10px;
+  }
+  .banner h1 {
+   font-size: 30px;
+  }
+  .banner p {
+   font-size: 27px!important;
+
   }
 }
 
@@ -57,6 +60,9 @@ color: white;
 @media (min-width: 576px) {
   .cards {
     grid-template-columns: 1fr 1fr;
+  }
+  .footer-copyright { 
+    font-size: 14px;
   }
 }
 
@@ -77,6 +83,6 @@ color: white;
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .cards {
-    grid-template-columns: 1fr 1fr 1fr 1fr  ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
