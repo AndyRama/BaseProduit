@@ -5,6 +5,11 @@ class PagesController < ApplicationController
     @projects = Project.all
   end
   
+  def pdf
+    pdf_filename = File.join(Rails.root, "tmp/Front-End.pdf")
+    send_file(pdf_filename, :filename => "Front-End.pdf", :type => "application/pdf")
+  end
+  
   private
   
   def project_params
