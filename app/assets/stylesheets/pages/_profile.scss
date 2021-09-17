@@ -3,9 +3,16 @@
  height: 100vh;
  padding-top: 40px; 
 }
-
-.about .about-content .left {
-  width: 45%;
+.about .about-content {
+  display        : flex;
+  flex-wrap      : wrap;
+  align-items    : center;
+  justify-content: space-between;
+}
+.about .about-content .left .right {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
 }
 .about .about-content .left img {
   height: 500px;
@@ -36,13 +43,15 @@
   padding: 10px 30px;
   margin-top: 20px;
   border-radius: 6px;
-  border: 2px solid white;
+  border: 2px solid black;
   transition: all 0.3s ease;
 }
+
 .about .about-content .right a:hover {
   color: white;
   background: none;
 }
+
 
 
 
