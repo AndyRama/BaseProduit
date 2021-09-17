@@ -8,6 +8,6 @@ class User < ApplicationRecord
   private
 
   def send_contact_email
-    UserMailer.with(user: self).contact.deliver_now
+    UserMailer.with(user: self).contact
   end
 end
