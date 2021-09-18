@@ -28,12 +28,12 @@ end
 
 puts "\nCreating 12 projets"
 
-project = Project.new(name: "Parentally", category:"Comming Soon", heroku: "#", git: "https://github.com/AndyRama/parentally", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631277873/kid-playing-with-pregnant-belly_lfqlta.jpg", user_id: andy.id)
-if project.save
-  print '.'
-else
-  print '_'
-end
+# project = Project.new(name: "Parentally", category:"Comming Soon", heroku: "#", git: "https://github.com/AndyRama/parentally", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631277873/kid-playing-with-pregnant-belly_lfqlta.jpg", user_id: andy.id)
+# if project.save
+#   print '.'
+# else
+#   print '_'
+# end
 
 project1 = Project.new(name: "PortfolioV1.2",category:"Full-Stack.", heroku: "https://portfolio-andyramaroson.herokuapp.com/", git: "https://github.com/AndyRama/Rubyportfolio", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631748301/portfolioV1.2_ywervv.png", user_id: andy.id)
 if project1.save

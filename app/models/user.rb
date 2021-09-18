@@ -1,13 +1,15 @@
+require "subscribe_to_newsletter_service"
+
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable, :recoverable, :rememberable, :validatable
   
-  after_create :send_contact_email
-
+  after_create :subscribe_to_newsletter
+  
   private
 
-  def send_contact_email
-    UserMailer.with(user: self).contact
+  def subscribe_to_newsletter
+    SubscribeToNewsletterService.new(self).contact
   end
 end
