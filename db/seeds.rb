@@ -50,14 +50,14 @@ else
 end
 
 
-project3 = Project.new(name: "My city View",category:"Full-Stack.", heroku: "https://my-street-view.herokuapp.com", git: "https://github.com/AndyRama/My_Street_View", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631277311/My_street_view_x1ujsb.png", user_id: andy.id)
+project3 = Project.new(name: "My city View",category:"Full-Stack.", heroku: "http://www.mycityviews.xyz", git: "https://github.com/AndyRama/My_Street_View", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631277311/My_street_view_x1ujsb.png", user_id: andy.id)
 if project3.save
   print '.'
 else
   print '_'
 end
 
-project4 = Project.new(name: "Garden Manager",category:"Full-Stack.", heroku: "https://garden-manager-bordeaux.herokuapp.com", git: "https://github.com/AndyRama/rails-garden-manager", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631277312/My_garden_Manager_bnv58n.png", user_id: andy.id)
+project4 = Project.new(name: "Garden Manager",category:"Full-Stack.", heroku: "www.manage-garden.xyz", git: "https://github.com/AndyRama/rails-garden-manager", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631277312/My_garden_Manager_bnv58n.png", user_id: andy.id)
 if project4.save
   print '.'
 else
