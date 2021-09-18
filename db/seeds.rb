@@ -57,7 +57,7 @@ else
   print '_'
 end
 
-project4 = Project.new(name: "Garden Manager",category:"Full-Stack.", heroku: "www.manage-garden.xyz", git: "https://github.com/AndyRama/rails-garden-manager", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631277312/My_garden_Manager_bnv58n.png", user_id: andy.id)
+project4 = Project.new(name: "Garden Manager",category:"Full-Stack.", heroku:"http://www.manage-garden.xyz" heroku: "www.manage-garden.xyz", git: "https://github.com/AndyRama/rails-garden-manager", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631277312/My_garden_Manager_bnv58n.png", user_id: andy.id)
 if project4.save
   print '.'
 else
