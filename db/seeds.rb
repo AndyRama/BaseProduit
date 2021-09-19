@@ -19,8 +19,17 @@ else
   print '_'
 end
 
-recruteur = User.new(email:"recruteur@gmail.com", password:"Pbxk1064", password_confirmation:"Pbxk1064")
+recruteur = User.new(email:"recruteurx@gmail.fr", password:"Pbxk1064", password_confirmation:"Pbxk1064")
 if recruteur.save
+  print '.'
+else
+  print '_'
+end
+
+puts "\nCreating 1 messages"
+
+message = Message.new(subject:"test",description: "testestestestest")
+if message.save
   print '.'
 else
   print '_'

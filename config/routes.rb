@@ -4,11 +4,10 @@ Rails.application.routes.draw do
 
   resources :projects, only:[:home]
 
-  resources :users do
-    get 'download'
-  end
-  
-  get 'download' => 'downloader#download'
+ resources :user ,only:[:contact] do
+  resources :messages, only:[:create,:new,:update]
+end
+
   get "/home" => "pages#home", as: :home
   get "/contact" => "pages#contact", as: :contact
   get "/profile" => "pages#profile", as: :profile
