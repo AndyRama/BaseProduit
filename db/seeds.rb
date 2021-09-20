@@ -26,15 +26,6 @@ else
   print '_'
 end
 
-puts "\nCreating 1 messages"
-
-message = Message.new(subject:"test",description: "testestestestest")
-if message.save
-  print '.'
-else
-  print '_'
-end
-
 puts "\nCreating 12 projets"
 
 # project = Project.new(name: "Parentally", category:"Comming Soon", heroku: "#", git: "https://github.com/AndyRama/parentally", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631277873/kid-playing-with-pregnant-belly_lfqlta.jpg", user_id: andy.id)
