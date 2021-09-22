@@ -105,19 +105,3 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
-
-/* all similar content styling codes */
-section {
-  padding: 100px 0;
-}
-
-.max-width {
-  max-width: 1300px;
-  padding  : 0 80px;
-  margin   : auto;
-}
-
-.about,
-.contact {
-  font-family: 'Poppins', sans-serif;
-}
