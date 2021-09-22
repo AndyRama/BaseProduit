@@ -6,12 +6,29 @@
   .footer-copyright { 
     font-size: 14px;
   }
+  .about .about-content .right .text {
+    font-size: 19px;
+  }
+
+  .contact .contact-content .right img {
+    flex-direction: column;
+    height        : 208px !important;
+    width         : 325px !important;
+    margin-bottom : -100px !important;
+    margin-left   : 33px !important;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .cards {
     grid-template-columns: 1fr 1fr;
+  }
+  .max-width {
+    padding: 0 23px;
+  }
+  .competences .comp-content .card {
+    width: 100%;
   }
 }
 
@@ -39,3 +56,8 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
+
+
+
+
+

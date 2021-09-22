@@ -5,9 +5,8 @@ class PagesController < ApplicationController
     @projects = Project.all
   end
   
-  def contact
-   
-  end
+  def contact   
+  end 
   
   private
   

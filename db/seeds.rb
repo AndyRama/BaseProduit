@@ -19,7 +19,7 @@ else
   print '_'
 end
 
-recruteur = User.new(email:"recruteurx@gmail.fr", password:"Pbxk1064", password_confirmation:"Pbxk1064")
+recruteur = User.new(email:"recruteur@gmail.fr", password:"Pbxk1064", password_confirmation:"Pbxk1064")
 if recruteur.save
   print '.'
 else
@@ -113,18 +113,18 @@ else
   print '_'
 end
 
-project12 = Project.new(name: "CovidList",category:"Front-End.", heroku: "https://covidfile.herokuapp.com", git: "https://github.com/AndyRama/covidfile", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631748300/covidfile_juavzg.png", user_id: andy.id)
-if project12.save
-  print '.'
-else
-  print '_'
-end
+# project12 = Project.new(name: "CovidList",category:"Front-End.", heroku: "https://covidfile.herokuapp.com", git: "https://github.com/AndyRama/covidfile", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631748300/covidfile_juavzg.png", user_id: andy.id)
+# if project12.save
+#   print '.'
+# else
+#   print '_'
+# end
 
-project13 = Project.new(name: "Geocoding",category:"API", heroku: "https://geocoding-mvp.herokuapp.com/flats", git: "https://github.com/AndyRama/geocoding", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631749737/mapboxAPI_luiwpi.png", user_id: andy.id)
-if project13.save
-  print '.'
-else
-  print '_'
-end
+# project13 = Project.new(name: "Geocoding",category:"API", heroku: "https://geocoding-mvp.herokuapp.com/flats", git: "https://github.com/AndyRama/geocoding", photo:"https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631749737/mapboxAPI_luiwpi.png", user_id: andy.id)
+# if project13.save
+#   print '.'
+# else
+#   print '_'
+# end
 
 puts "\n Seeding terminé!"
