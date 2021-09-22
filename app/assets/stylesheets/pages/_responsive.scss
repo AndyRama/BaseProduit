@@ -32,6 +32,45 @@
   }
 }
 
+// Large devices (desktops, 947px and up)
+@media (max-width: 947px) {
+  .max-width {
+    max-width: 930px;
+  }
+
+  .about .about-content .column {
+    width: 100%;
+  }
+
+  .about .about-content .left {
+    display        : flex;
+    justify-content: center;
+    margin         : 0 auto 60px;
+  }
+
+  .about .about-content .right {
+    flex: 100%;
+  }
+
+  .competences .comp-content .card {
+    width        : calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+
+  .contact .contact-content .column {
+    width        : 100%;
+    margin-bottom: 35px;
+  }
+
+  .contact .contact-content .right img {
+    flex-direction: column;
+    height        : 184px !important;
+    width         : 738px !important;
+    margin-bottom : -103px !important;
+    margin-left   : 49px !important;
+  }
+}
+
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .cards {
@@ -42,11 +81,21 @@
   }
 
   .contact .contact-content .right img {
-    /* flex-direction: inline; */
-    /* height: 254px !important; */
-    /* width: 630px !important; */
     align-content: center;
     flex-basis   : inline;
+  }
+
+
+  .contact .contact-content .right img {
+    align-content: center;
+    flex-basis   : inline;
+  }
+}
+
+@media (max-width: 1104px) {
+  .about .about-content .left img {
+    height: 350px;
+    width : 350px;
   }
 }
 
@@ -57,7 +106,18 @@
   }
 }
 
+/* all similar content styling codes */
+section {
+  padding: 100px 0;
+}
 
+.max-width {
+  max-width: 1300px;
+  padding  : 0 80px;
+  margin   : auto;
+}
 
-
-
+.about,
+.contact {
+  font-family: 'Poppins', sans-serif;
+}
