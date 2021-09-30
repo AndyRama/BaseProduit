@@ -5,12 +5,12 @@ class PagesController < ApplicationController
   def home
     @projects = Project.all
   end
-  
-  def contact   
-  end 
-  
+
+  def contact
+  end
+
   private
-  
+
   def project_params
     params.require(:project).permit(:name, :photo, :heroku, :git, :user_id, :category)
   end
