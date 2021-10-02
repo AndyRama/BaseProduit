@@ -25,6 +25,11 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
+//Card-category-project
+#project {
+  height: 400px !important;
+}
+
 .card-category span {
   display: flex;
   justify-content: flex-end;
@@ -33,6 +38,7 @@
   opacity: 0.8;  
   color: white;
 }
+
 
 
 // Smallest device
