@@ -29,7 +29,10 @@
           <%= image_tag 'avatar.jpg',class: "avatar-bordered", alt: "avatar-bordered" %>
         <% end %>
       <% else %>
-        <li class="nav-item">
+      <li class="nav-item">
+        <%= link_to "Home", "/", class: "nav-link btn btn-ghost mt-1" %>
+      </li>  
+      <li class="nav-item">
           <button type="button" class="btn btn-ghost mt-1" data-toggle="modal" data-target="#registerModal">
               Register
           </button>
@@ -57,10 +60,10 @@
             <div class="form-inputs">
               <%= f.input :email,
                         required: true,
-                        autofocus: true,
+                        autofocus: false,
                         input_html: { autocomplete: "email" }%>
               <%= f.input :password,
-                        required: true,
+                        required: false,
                         hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
                         input_html: { autocomplete: "new-password" } %>
               <%= f.input :password_confirmation,
