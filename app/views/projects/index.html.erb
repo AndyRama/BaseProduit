@@ -1,0 +1,32 @@
+<%= render 'shared/banner' %>
+<div class="container-flex mt-3">
+  <div class="cards">
+    <% @projects.each do |project| %>
+      <div class="card-category mb-0" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= project.photo %>)">
+        <div class="container">
+          <span><%= project.category %></span>
+          <h2 id="name"><%= project.name %></h2>
+          <div class="footer-card">
+            <a class="btn-cards-heroku" href="<%= project.heroku %>" target="new"> <%= image_tag 'heroku.png' %></a>   
+            <a class="btn-cards-git" href="<%= project.git %>" target="new"><i class="fab fa-github"></i></a>
+            <%= link_to '', project, class:"btn-cards-chevron fas fa-chevron-right" %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dbtnehfrf/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1631711959/products_gnxhm5.png)">
+      <div class="container">
+        <span>Work flow.</span>
+        <h2 id="name">Prototypage</h2>
+        <a class="btn-cards-user" href="https://res.cloudinary.com/dbtnehfrf/image/upload/v1631716870/User_Stories_lnx4ky.png" target="new"><%= image_tag'user.png'%></a>
+        <a class="btn-cards-bsd" href="https://res.cloudinary.com/dbtnehfrf/image/upload/v1631716489/schemaDB_a9yccu.png" target="new"><%= image_tag'bsd.png'%></a>   
+        <a class="btn-cards-trello" href="https://res.cloudinary.com/dbtnehfrf/image/upload/v1631716491/Trello_bk4jgf.png" target="new"><%= image_tag'trello.png'%></a>  
+        <a class="btn-cards-figma" href="https://res.cloudinary.com/dbtnehfrf/image/upload/v1631716490/Figma_lsabs5.png" target="new"><%= image_tag'figma.png'%></a>
+        <a class="btn-cards-git" href="#" target="new"><i class="fab fa-github"></i></a>
+        <a class="btn-cards-chevron fas fa-chevron-right" href="#" target="new"></a>  
+      </div>
+    </div>
+  </div>
+</div>
+<%= render'shared/navbar-info' %>
+<%= render 'shared/footer' %>
