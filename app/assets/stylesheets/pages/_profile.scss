@@ -1,7 +1,8 @@
 /* about section styling */
 .about .title::after {
-  content: "Reconversion";
+  content: "";
 }
+
 .about{
   background-color: white;
 }
@@ -9,8 +10,8 @@
   width: 45%;
 }
 .about .about-content .left img {
-  height: 400px;
-  width: 400px;
+  height: 489px;
+  width: 524px;
   object-fit: cover;
   border-radius: 6px;
 }
