@@ -1,69 +1,127 @@
-<%#= render 'shared/banner-project' %>
+<%= render'shared/banner-project' %>
 <section class="about" id="about">
+<%= link_to 'Back', projects_path, class:"btn btn-ghost",id:'back' %>
   <div class="max-width">
-    <h2 class="title"><%= @project.name %></h2>
-  <div class="about-content">
+      <h2 class="title"><%= @project.name %></h2>
+    <div class="about-content">
       <div class="column left">
         <div><img src="<%= @project.photo %>" width="1300" height="900" alt=""/></div>
       </div>
       <div class="column right">
-        <div class="text"><span>Challenge</span></div>
+        <div class="text"><span>Objectif</span></div>
         <p>It is a mobile app allowing divorced parents to map out their time necessary to
            look after kids in common. Using the Family Plan App, divorced parents can make 
            a schedule that organizes how their kids will spend time with each of them. 
            Par la suite, j'ai créé une entreprise de support ainsi que de vente de matèriel
         </p>
         <p>
-          <div class="text"><span>MVP</span></div>
+          <div class="text"><span>Challenge</span></div>
+           It is a mobile app allowing divorced parents to map out their time necessary to
+           look after kids in common. Using the Family Plan App, divorced parents can make 
+           a schedule that organizes how their kids will spend time with each of them. 
+        </p>
+         <p>
+           <div class="text"><span>Mvp</span></div>
            It is a mobile app allowing divorced parents to map out their time necessary to
            look after kids in common. Using the Family Plan App, divorced parents can make 
            a schedule that organizes how their kids will spend time with each of them. 
            Par la suite, j'ai créé une entreprise de support ainsi que de vente de matèriel
         </p>
-        <p>
-          <div class="text"><span>Solution</span></div>
-           It is a mobile app allowing divorced parents to map out their time necessary to
-           look after kids in common. Using the Family Plan App, divorced parents can make 
-           a schedule that organizes how their kids will spend time with each of them. 
-           Par la suite, j'ai créé une entreprise de support ainsi que de vente de matèriel
-        </p>
+          <a class="btn btn-ghost" target="blank" href="<%= @project.heroku %>"><%= image_tag 'heroku.png' %>Demo Live</a>
+          <a class="btn btn-ghost" target="blank" href="<%= @project.git %>"><i class="fab fa-github"></i> Code</a>
+          <%= link_to 'Back', projects_path, class:"btn btn-ghost" %>
       </div>
     </div>
   </div>
-<div class="max-width">
-<div class="about-content">
+  <br>
+  <br>
+   <div class="max-width">
+      <h2 class="title">Stack techno.</h2>
+    <div class="about-content">
       <div class="column left">
         <div><img src="<%= @project.photo %>" width="1300" height="900" alt=""/></div>
       </div>
       <div class="column right">
-        <div class="text"><span>User stories</span></div>
+        <div class="text"><span>Ruby on Rails</span></div>
+          <p>It is a mobile app allowing divorced parents to map out their time necessary to
+            look after kids in common. Using the Family Plan App, divorced parents can make 
+            a schedule that organizes how their kids will spend time with each of them.
+          </p>
+        <div class="text"><span>Dashboard de production</span></div>
         <p>It is a mobile app allowing divorced parents to map out their time necessary to
-           look after kids in common. Using the Family Plan App, divorced parents can make 
-           a schedule that organizes how their kids will spend time with each of them. 
-           Par la suite, j'ai créé une entreprise de support ainsi que de vente de matèriel
+          It is a mobile app allowing divorced parents to map out their time necessary to  
+          look after kids in common. Using the Family Plan App, divorced parents can make </p>   
         </p>
-        <p>It is a mobile app allowing divorced parents to map out their time necessary to
-           look after kids in common. Using the Family Plan App, divorced parents can make 
-           a schedule that organizes how their kids will spend time with each of them. 
-           Par la suite, j'ai créé une entreprise de support ainsi que de vente de matèriel
-        </p>
+        <a class="btn btn-ghost">Rails</a>
+        <a class="btn btn-ghost">Ruby2.6.6</a>
+        <a class="btn btn-ghost">HTML/CSS</a>
+        <a class="btn btn-ghost">JS</a>
+        <a class="btn btn-ghost">API</a>
+        <a class="btn btn-ghost">SCSS</a>
+        <a class="btn btn-ghost">PostgreSQL</a>
+        <a class="btn btn-ghost">Git/GitHub</a>
+        <a class="btn btn-ghost">Heroku</a>
+        <a class="btn btn-ghost">Git/GitHub</a>
+        <a class="btn btn-ghost">Heroku</a>
+        <a class="btn btn-ghost">API</a>
       </div>
     </div>
   </div>
-<div class="max-width">
-<div class="about-content">
+  <br>
+ <br>
+   <div class="max-width">
+      <h2 class="title">Road Map</h2>  
+    <div class="about-content">
       <div class="column left">
         <div><img src="<%= @project.photo %>" width="1300" height="900" alt=""/></div>
       </div>
       <div class="column right">
+        <div class="text"><span>User stories./Site Map</span></div>
+          <p>It is a mobile app allowing divorced parents to map out their time necessary to
+            look after kids in common. Using the Family Plan App, divorced parents can make 
+          </p>
+        </p>
         <div class="text"><span>Schema DB</span></div>
+           look after kids in common. Using the Family Plan App, divorced parents can make.
+           It is a mobile app allowing divorced parents to map out their time necessary to
+        </p> 
+        <div class="text"><span>Dashboard</span></div>
+           look after kids in common. Using the Family Plan App, divorced parents can make   
+           It is a mobile app allowing divorced parents to map out their time necessary to
+          <a class="btn btn-ghost" href="#">User stories</a>
+          <a class="btn btn-ghost" href="#">Shema DB</a>
+          <a class="btn btn-ghost" href="#">Taleau</a>
+          <a class="btn btn-ghost" href="#">Map</a>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="max-width">
+    <div class="about-content">
+      <div class="column left"> 
+        <div><img src="<%= @project.photo %>" width="1300" height="900" alt=""/></div>
+      </div>
+      <div class="column right">
+        <div class="text"><span>Objectif</span></div>
+          <p>It is a mobile app allowing divorced parents to map out their time necessary to
+            look after kids in common. Using the Family Plan App, divorced parents can make 
+            a schedule that organizes how their kids will spend time with each of them.
+          </p>
+        <div class="text"><span>Resultat</span></div>
         <p>It is a mobile app allowing divorced parents to map out their time necessary to
            look after kids in common. Using the Family Plan App, divorced parents can make 
            a schedule that organizes how their kids will spend time with each of them. 
-           Par la suite, j'ai créé une entreprise de support ainsi que de vente de matèriel
         </p>
+        <div class="text"><span>Amélioration</span></div>
+        <p>It is a mobile app allowing divorced parents to map out their time necessary to
+           look after kids in common. Using the Family Plan App, divorced parents can make
+           a schedule that organizes how their kids will spend time with each of them.    
+        </p>
+          <a class="btn btn-ghost" href="#">Demo Live</a>
+  
       </div>
     </div>
   </div>
 </section>
+<%= render 'shared/footer' %>
  
