@@ -1,8 +1,6 @@
 <%= render'shared/banner-project' %>
 <section class="about" id="about">
-<%#= link_to 'Back', projects_path, class:"btn btn-ghost",id:'back' %>
   <div class="max-width">
-      <h2 class="title"><%= @project.name %></h2>
     <div class="about-content">
       <div class="column left">
         <div><img src="<%= @project.photo %>" width="1300" height="900" alt=""/></div>
@@ -12,7 +10,6 @@
         <p>It is a mobile app allowing divorced parents to map out their time necessary to
            look after kids in common. Using the Family Plan App, divorced parents can make 
            a schedule that organizes how their kids will spend time with each of them. 
-           Par la suite, j'ai créé une entreprise de support ainsi que de vente de matèriel
         </p>
         <p>
           <div class="text"><span>Challenge</span></div>
@@ -25,7 +22,6 @@
            It is a mobile app allowing divorced parents to map out their time necessary to
            look after kids in common. Using the Family Plan App, divorced parents can make 
            a schedule that organizes how their kids will spend time with each of them. 
-           Par la suite, j'ai créé une entreprise de support ainsi que de vente de matèriel
         </p>
           <a class="btn btn-ghost" target="blank" href="<%= @project.heroku %>"><%= image_tag 'heroku.png' %>Demo Live</a>
           <a class="btn btn-ghost" target="blank" href="<%= @project.git %>"><i class="fab fa-github"></i> Code</a>
@@ -35,7 +31,7 @@
   </div>
   <br>
   <br>
-   <div class="max-width">
+    <div class="max-width">
       <h2 class="title">Stack techno.</h2>
     <div class="about-content">
       <div class="column left">
@@ -54,7 +50,6 @@
         </p>
         <a class="btn btn-ghost">Rails</a>
         <a class="btn btn-ghost">Ruby2.6.6</a>
-        <a class="btn btn-ghost">HTML/CSS</a>
         <a class="btn btn-ghost">JS</a>
         <a class="btn btn-ghost">API</a>
         <a class="btn btn-ghost">SCSS</a>
@@ -76,8 +71,9 @@
         <div><img src="<%= @project.photo %>" width="1300" height="900" alt=""/></div>
       </div>
       <div class="column right">
-        <div class="text"><span>User stories./Site Map</span></div>
+        <div class="text"><span>User stories | Site Map</span></div>
           <p>It is a mobile app allowing divorced parents to map out their time necessary to
+            look after kids in common. Using the Family Plan App, divorced parents can make 
             look after kids in common. Using the Family Plan App, divorced parents can make 
           </p>
         </p>
@@ -118,7 +114,6 @@
            a schedule that organizes how their kids will spend time with each of them.    
         </p>
           <a class="btn btn-ghost" href="#">Demo Live</a>
-  
       </div>
     </div>
   </div>
