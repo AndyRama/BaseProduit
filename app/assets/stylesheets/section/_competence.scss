@@ -1,0 +1,49 @@
+
+/* competences section styling */
+.competences h2 {
+color:#111;
+}
+.competences {
+	color:#fff;
+	background: #fff;
+}
+.competences .title::before {
+	background: #111;
+}
+.competences .title::after {
+	background: #fff;
+	content: "Competences";
+}
+.competences .comp-content .card {
+	width: calc(33% - 20px);
+	background: #222;
+	text-align: center;
+	border-radius: 6px;
+	padding: 20px 25px;
+	margin-bottom:10px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+  /* background-color:#d24439; */
+}
+.competences .comp-content .card:hover {
+	background: #d24439;
+}
+.competences .comp-content .card .box {
+	transition: all 0.3s ease;
+} 
+.competences .comp-content .card:hover .box {
+	transform: scale(1.05);
+}
+.competences .comp-content .card i {
+	font-size: 50px;
+	color:#d24439;
+	transition: color 0.3s ease;
+}
+.competences .comp-content .card:hover i {
+	color: #fff;
+}
+.competences .comp-content .card .text {
+	font-size: 25px;
+	font-weight: 500;
+	margin: 10px 0 7px 0;
+}

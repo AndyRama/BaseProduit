@@ -1,9 +1,10 @@
 <%= render'shared/banner-project' %>
 <section class="about" id="about">
   <div class="max-width">
+    <h2 class="title">Pour commmencer</h2>
     <div class="about-content">
       <div class="column left">
-        <div><img src="<%= @project.photo %>" width="1300" height="900" alt=""/></div>
+        <img src="<%= @project.photo %>" >
       </div>
       <div class="column right">
         <div class="text"><span>Objectif</span></div>
@@ -23,124 +24,19 @@
            look after kids in common. Using the Family Plan App, divorced parents can make 
            a schedule that organizes how their kids will spend time with each of them. 
         </p>
-          <a class="btn btn-ghost" target="blank" href="<%= @project.heroku %>"><%= image_tag 'heroku.png' %>Demo Live</a>
-          <a class="btn btn-ghost" target="blank" href="<%= @project.git %>"><i class="fab fa-github"></i> Code</a>
-          <%= link_to 'Back', projects_path, class:"btn btn-ghost" %>
+          <a class="btn btn" target="blank" href="<%= @project.heroku %>"><%= image_tag 'heroku.png' %>Demo Live</a>
+          <a class="btn btn" target="blank" href="<%= @project.git %>"><i class="fab fa-github"></i> Code</a>
+          <%= link_to 'Back', projects_path, class:"btn btn" %>
       </div>
     </div>
   </div>
   <br>
   <br>
-  <div class="container">
-		<div class="row">
-				<div class="col-md-6">
-						<div class="demo-image">
-								<img src="assets/img/showcases/showcase-2/examples/home_4.jpg" alt="">
-						</div>
-				</div>
-				<div class="col-md-5 col-md-offset-1">
-						<h4 class="header-text">Beautiful colors</h4>
-						<p>
-								Each color has a strong pigment and was chosen to make your design shine. Each component from our product can have one of these colors. Try on different combinations and be sure that everything works together.
-						</p>
-						<p>
-								PSD Custom focuses on conveying the attention of your users to the important parts of the page and the actions. While keeping a light feel, the colors give the page an extra push.
-						</p>
-				</div>
-		</div>
-		<br>
-		<div class="row">
-				<div class="col-md-5">
-						<h4 class="header-text">Pixel Perfect</h4>
-						<p>
-								Each color has a strong pigment and was chosen to make your design shine. Each component from our product can have one of these colors. Try on different combinations and be sure that everything works together.
-						</p>
-						<p>
-								PSD Custom focuses on conveying the attention of your users to the important parts of the page and the actions. While keeping a light feel, the colors give the page an extra push.
-						</p>
-				</div>
-				<div class="col-md-6 col-md-offset-1">
-						<div class="demo-image">
-								<img src="assets/img/showcases/showcase-2/examples/home_6.jpg" alt="">
-						</div>
-				</div>
-		</div>
-  </div>
-   <div class="container">
-		<div class="row">
-				<div class="col-md-6">
-						<div class="demo-image">
-								<img src="assets/img/showcases/showcase-2/examples/home_4.jpg" alt="">
-						</div>
-				</div>
-				<div class="col-md-5 col-md-offset-1">
-						<h4 class="header-text">Beautiful colors</h4>
-						<p>
-								Each color has a strong pigment and was chosen to make your design shine. Each component from our product can have one of these colors. Try on different combinations and be sure that everything works together.
-						</p>
-						<p>
-								PSD Custom focuses on conveying the attention of your users to the important parts of the page and the actions. While keeping a light feel, the colors give the page an extra push.
-						</p>
-				</div>
-		</div>
-		<br>
-		<div class="row">
-				<div class="col-md-5">
-						<h4 class="header-text">Pixel Perfect</h4>
-						<p>
-								Each color has a strong pigment and was chosen to make your design shine. Each component from our product can have one of these colors. Try on different combinations and be sure that everything works together.
-						</p>
-						<p>
-								PSD Custom focuses on conveying the attention of your users to the important parts of the page and the actions. While keeping a light feel, the colors give the page an extra push.
-						</p>
-				</div>
-				<div class="col-md-6 col-md-offset-1">
-						<div class="demo-image">
-								<img src="assets/img/showcases/showcase-2/examples/home_6.jpg" alt="">
-						</div>
-				</div>
-		</div>
-  </div>
-   <div class="container">
-		<div class="row">
-				<div class="col-md-6">
-						<div class="demo-image">
-								<img src="assets/img/showcases/showcase-2/examples/home_4.jpg" alt="">
-						</div>
-				</div>
-				<div class="col-md-5 col-md-offset-1">
-						<h4 class="header-text">Beautiful colors</h4>
-						<p>
-								Each color has a strong pigment and was chosen to make your design shine. Each component from our product can have one of these colors. Try on different combinations and be sure that everything works together.
-						</p>
-						<p>
-								PSD Custom focuses on conveying the attention of your users to the important parts of the page and the actions. While keeping a light feel, the colors give the page an extra push.
-						</p>
-				</div>
-		</div>
-		<br>
-		<div class="row">
-				<div class="col-md-5">
-						<h4 class="header-text">Pixel Perfect</h4>
-						<p>
-								Each color has a strong pigment and was chosen to make your design shine. Each component from our product can have one of these colors. Try on different combinations and be sure that everything works together.
-						</p>
-						<p>
-								PSD Custom focuses on conveying the attention of your users to the important parts of the page and the actions. While keeping a light feel, the colors give the page an extra push.
-						</p>
-				</div>
-				<div class="col-md-6 col-md-offset-1">
-						<div class="demo-image">
-								<img src="assets/img/showcases/showcase-2/examples/home_6.jpg" alt="">
-						</div>
-				</div>
-		</div>
-  </div>
-    <div class="max-width">
-      <h2 class="title">Stack techno.</h2>
+  <div class="max-width">
+    <h2 class="title">Stack techno.</h2>
     <div class="about-content">
       <div class="column left">
-        <div><img src="<%= @project.photo %>" width="1300" height="900" alt=""/></div>
+        <div><img src="https://www.wallpapertip.com/wmimgs/83-838362_web-developer.jpg" ></div>
       </div>
       <div class="column right">
         <div class="text"><span>Ruby on Rails</span></div>
@@ -153,30 +49,30 @@
           It is a mobile app allowing divorced parents to map out their time necessary to  
           look after kids in common. Using the Family Plan App, divorced parents can make </p>   
         </p>
-        <a class="btn btn-ghost">Rails</a>
-        <a class="btn btn-ghost">Ruby2.6.6</a>
-        <a class="btn btn-ghost">JS</a>
-        <a class="btn btn-ghost">API</a>
-        <a class="btn btn-ghost">SCSS</a>
-        <a class="btn btn-ghost">PostgreSQL</a>
-        <a class="btn btn-ghost">Git/GitHub</a>
-        <a class="btn btn-ghost">Heroku</a>
-        <a class="btn btn-ghost">Git/GitHub</a>
-        <a class="btn btn-ghost">Heroku</a>
-        <a class="btn btn-ghost">API</a>
+        <a class="btn btn">Rails</a>
+        <a class="btn btn">Ruby2.6.6</a>
+        <a class="btn btn">JS</a>
+        <a class="btn btn">API</a>
+        <a class="btn btn">SCSS</a>
+        <a class="btn btn">PostgreSQL</a>
+        <a class="btn btn">Git/GitHub</a>
+        <a class="btn btn">Heroku</a>
+        <a class="btn btn">Git/GitHub</a>
+        <a class="btn btn">Heroku</a>
+        <a class="btn btn">API</a>
       </div>
     </div>
   </div>
   <br>
- <br>
+  <br>
    <div class="max-width">
       <h2 class="title">Road Map</h2>  
     <div class="about-content">
       <div class="column left">
-        <div><img src="<%= @project.photo %>" width="1300" height="900" alt=""/></div>
+        <div><img src="https://www.wallpapertip.com/wmimgs/173-1734996_background-image-web-development.jpg" ></div>
       </div>
       <div class="column right">
-        <div class="text"><span>User stories | Site Map</span></div>
+        <div class="text"><span>User stories</span></div>
           <p>It is a mobile app allowing divorced parents to map out their time necessary to
             look after kids in common. Using the Family Plan App, divorced parents can make 
             look after kids in common. Using the Family Plan App, divorced parents can make 
@@ -186,18 +82,19 @@
            look after kids in common. Using the Family Plan App, divorced parents can make.
            It is a mobile app allowing divorced parents to map out their time necessary to
         </p> 
-        <div class="text"><span>Dashboard</span></div>
+        <div class="text"><span>Site Map</span></div>
            look after kids in common. Using the Family Plan App, divorced parents can make   
            It is a mobile app allowing divorced parents to map out their time necessary to
-          <a class="btn btn-ghost" href="#">User stories</a>
-          <a class="btn btn-ghost" href="#">Shema DB</a>
-          <a class="btn btn-ghost" href="#">Taleau</a>
-          <a class="btn btn-ghost" href="#">Map</a>
+          <a class="btn btn" href="#">User stories</a>
+          <a class="btn btn" href="#">Shema DB</a>
+          <a class="btn btn" href="#">Taleau</a>
+          <a class="btn btn" href="#">Map</a>
       </div>
     </div>
   </div>
   <br>
   <div class="max-width">
+    <h2 class="title">Conclusion</h2>  
     <div class="about-content">
       <div class="column left"> 
         <div><img src="<%= @project.photo %>" width="1300" height="900" alt=""/></div>
@@ -218,7 +115,7 @@
            look after kids in common. Using the Family Plan App, divorced parents can make
            a schedule that organizes how their kids will spend time with each of them.    
         </p>
-          <a class="btn btn-ghost" href="#">Demo Live</a>
+          <a class="btn btn" target="new" href="<%= @project.heroku %>"><%= image_tag 'heroku.png' %>Demo Live</a>
       </div>
     </div>
   </div>
