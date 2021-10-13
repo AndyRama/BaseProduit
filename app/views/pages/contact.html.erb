@@ -1,9 +1,13 @@
-<%= render 'shared/header' %>
+<%#= render 'shared/header' %>
    <section class="contact" id="contact">
     <div class="max-width">
+      <h2 class="title">Contacter moi</h2>  
       <div class="contact-content">
         <div class="column left">
-          <div class="text">Actuellement disponible</div>
+          <%= image_tag 'logo.png' %>
+       </div>
+        <div class="column right">
+            <div class="text">Actuellement disponible</div>
           <p>Je recherche un poste de developer web en ruby pour intégrer une équipe afin
             d'acquérir plus d'expèrience. Contacter pour tout renseignement.</p>
           <div class="icons">
@@ -41,30 +45,6 @@
             </div>
           </div> 
         </div>
-        <div class="column right">
-          <div class="text">Message </div>
-          <form action="#">
-            <div class="fields">
-              <div class="field name">
-                <input type="text" placeholder="Nom" required>
-              </div>
-              <div class="field email">
-                <input type="text" placeholder="Prénom" required>
-              </div>
-            </div>
-            <div class="field">
-              <input type="text" placeholder="Email" required>
-            </div>
-            <div class="field">
-              <input type="text" placeholder="Sujet" required>
-            </div>
-            <div class="field textarea">
-              <textarea cols="30" rows="10" placeholder="Message ... " required></textarea>
-            </div>
-            <div class="button">
-              <button type="submit">Envoyer</button>
-            </div>
-          </form>
         </div>
       </div>
     </div>
