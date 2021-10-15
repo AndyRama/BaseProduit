@@ -1,20 +1,32 @@
-<%= render 'shared/banner' %>
-<div class="container-flex mt-3">
-  <div class="cards">
-    <% @projects.each do |project| %>
-      <div class="card-category mb-0" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= project.photo %>)">
-        <div class="container">
-          <span><%= project.category %></span>
-          <h2 id="name"><%= project.name %></h2>
-          <div class="footer-card">
-            <a class="btn-cards-heroku" href="<%= project.heroku %>" target="new"> <%= image_tag 'heroku.png' %></a>   
-            <a class="btn-cards-git" href="<%= project.git %>" target="new"><i class="fab fa-github"></i></a>
-            <%= link_to '', project, class:"btn-cards-chevron fas fa-chevron-right" %>
-          </div>
-        </div>
-      </div>
-    <% end %> 
+<%#= render 'shared/banner' %>
+<%#= render 'shared/profile' %>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://www.wallpapertip.com/wmimgs/160-1604579_web-development.jpg);">
+  <div class="container-fluid">
+    <h1 class="title">@Project.all</h1>
   </div>
 </div>
+<section class="about" id="about">
+  <div class="max-width">
+    <h2 class="title">Mes Projets</h2>
+    <p>Grâce à plus de 3 années d'expériences en tant que développeur web freelance et à des compétences variées dans le domaine du web, j’ai eu l'occasion d'accompagner de multiples entreprises sur diverses missions de création ou mises à jour de sites web mais aussi d’optimisation du référencement ou du design.</p>
+    <div class="container-flex mt-3">
+      <div class="cards">
+        <% @projects.each do |project| %>
+          <div class="card-category mb-0" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= project.photo %>)">
+            <div class="container">
+            <span><%= project.category %></span>
+            <h2 id="name"><%= project.name %></h2>
+              <div class="footer-card">
+                <a class="btn-cards-heroku" href="<%= project.heroku %>" target="new"> <%= image_tag 'heroku.png' %></a>   
+                <a class="btn-cards-git" href="<%= project.git %>" target="new"><i class="fab fa-github"></i></a>
+                <%= link_to '', project, class:"btn-cards-chevron fas fa-chevron-right" %>
+              </div>
+            </div>
+          </div>
+        <% end %> 
+      </div>
+    </div>
+  </div>
+</section>
 <%= render'shared/navbar-info' %>
 <%= render 'shared/footer' %>

@@ -1,6 +1,7 @@
 <%= render'shared/banner-project' %>
 <section class="about" id="about">
   <div class="max-width">
+  <h2 class="title">Conception </h2> 
     <div class="about-content">
       <div class="column left">
        <%= image_tag 'pitch.jpg' %>
@@ -23,9 +24,9 @@
            look after kids in common. Using the Family Plan App, divorced parents can make 
            a schedule that organizes how their kids will spend time with each of them. 
         </p>
-          <a class="btn btn" target="blank" href="<%= @project.heroku %>"><%= image_tag 'heroku.png' %>Demo Live</a>
+          <a class="btn btn" target="blank" href="<%= @project.heroku %>"><%= image_tag 'heroku.png' %>Demo</a>
           <a class="btn btn" target="blank" href="<%= @project.git %>"><i class="fab fa-github"></i> Code</a>
-          <%#= link_to 'Back', projects_path, class:"btn btn" %>
+          <%= link_to 'Back', projects_path, class:"btn btn" %>
       </div>
     </div>
   </div>
@@ -35,10 +36,10 @@
       <h2 class="title">Road Map</h2> 
     <div class="about-content">
       <div class="column left">
-        <%= image_tag 'roadmap.jpg' %>
+        <%= image_tag 'roadmap2.jpg' %>
       </div>
       <div class="column right">
-        <h3 class="sub-title">Users strories</h3>
+        <div class="text"><span>Users Stories</span></div>
           <p>It is a mobile app allowing divorced parents to map out their time necessary to
             look after kids in common. Using the Family Plan App, divorced parents can make 
           </p>
@@ -63,14 +64,15 @@
   </div>
   <br>
   <br>
+  <br>
   <div class="max-width">
     <h2 class="title">Stack techno.</h2>
     <div class="about-content">
       <div class="column left">
-        <div><img src="https://www.wallpapertip.com/wmimgs/83-838362_web-developer.jpg" ></div>
+        <%= image_tag 'https://www.wallpapertip.com/wmimgs/83-838362_web-developer.jpg' %>
       </div>
       <div class="column right">
-        <h3 class="sub-title">Ruby on Rails</h3>
+        <div class="text"><span>Ruby on Rails</span></div>
         <p>It is a mobile app allowing divorced parents to map out their time necessary to
           look after kids in common. Using the Family Plan App, divorced parents can make 
           a schedule that organizes how their kids will spend time with each of them.
@@ -85,17 +87,16 @@
         <a class="btn btn">SCSS</a>
         <a class="btn btn">PostgreSQL</a>
         <a class="btn btn">Git/GitHub</a>
-        <a class="btn btn">Heroku</a>
-        <a class="btn btn">API</a>
       </div>
     </div>
   </div>
+  <br>
   <br>
   <div class="max-width">
     <h2 class="title">Conclusion</h2>  
     <div class="about-content">
       <div class="column left">
-        <img src="<%= @project.photo %>" alt=""> 
+        <%= image_tag 'https://www.wallpapertip.com/wmimgs/83-838362_web-developer.jpg' %>
       </div>
       <div class="column right">
         <div class="text"><span>Objectif</span></div>
@@ -113,7 +114,7 @@
            look after kids in common. Using the Family Plan App, divorced parents can make
            a schedule that organizes how their kids will spend time with each of them.    
         </p>
-          <a class="btn btn" target="new" href="<%= @project.heroku %>"><%= image_tag 'heroku.png' %>Demo Live</a>
+          <a class="btn btn" target="new" href="<%= @project.heroku %>"><%= image_tag 'heroku.png' %>Demo</a>
       </div>
     </div>
   </div>

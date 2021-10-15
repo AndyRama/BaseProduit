@@ -6,19 +6,14 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
-
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <% if user_signed_in?%>
         <li class="nav-item">
-          <a class="nav-link btn btn-ghost mt-1" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/andyramaroson/15min'});return false;">Calendrier</a>
-        </li>
-        <li class="nav-item">
           <%= link_to "Home", "/", class: "nav-link btn btn-ghost mt-1" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Profile", "/profile", class: "nav-link btn btn-ghost mt-1" %>
+          <%= link_to "Projets", projects_path, class: "nav-link btn btn-ghost mt-1" %>
         </li>
         <li class="nav-item">
           <%= link_to "Contact", "/contact", class: "nav-link btn btn-ghost mt-1" %>
