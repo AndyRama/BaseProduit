@@ -30,14 +30,3 @@
 </section>
 <%= render'shared/navbar-info' %>
 <%= render 'shared/footer' %>
-<section>
-  <% @projects.each do |project| %>
-    <div class="card-product">
-      <img src="<%= project.photo %>" />
-      <div class="card-product-infos">
-        <h2 id="name"><%= project.name %></h2>
-        <p>Product description with <strong>relevant info</strong> only.</p>
-      </div>
-    </div>
-  <% end %>
-</section>
