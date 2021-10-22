@@ -1,41 +1,54 @@
 <%= render 'shared/banner' %>
 <%= render 'shared/profile' %>
-<section class="about" id="about">
+<!-- services section start -->
+<section class="competences pt-4" id="competences">
   <div class="max-width">
-    <h2 class="title">Mes Projets</h2>
-    <p>Grâce à plus de 3 années d'expériences en tant que développeur web freelance et à des compétences variées dans le domaine du web, j’ai eu l'occasion d'accompagner de multiples entreprises sur diverses missions de création ou mises à jour de sites web mais aussi d’optimisation du référencement ou du design.</p>
-    <div class="container-flex mt-3">
-      <div class="cards">        
-        <div class="card-category mb-0" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url()">
-          <div class="container">
-            <div class="footer-card">
-            </div> 
-          </div>
-        </div>        
+    <h2 class="title">Competences</h2>
+    <div class="comp-content">
+      <div class="card">
+        <div class="box">
+          <i class="fas fa-code"></i>
+          <div class="text">Front</div>
+          <p>Ruby on rails  <br> HTML/CSS <br> React (en cours) <br> Javascript 6</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <i class="fas fa-cubes"></i>
+          <div class="text">Rails</div>
+          <p>Patern de conception<br> Models & CRUD<br> Advanced Routing <br>Hosting & Image Upload</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <i class="fas fa-project-diagram"></i>
+          <div class="text">Projets</div>
+          <p>WebSocket & ActionCable <br> Background Jobs (Sidekiq) <br> DB Advanced <br> Testing (CI/CD)</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <i class="fas fa-database"></i>
+          <div class="text">DB</div>
+          <p>Schema Design & SQL <br> CRUD with SQL <br> Active record Basics<br> Association & Validation </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <i class="fas fa-paint-brush"></i>
+          <div class="text">Design</div>
+          <p>Design Sofware: Figma <br> Adobe XD <br> Zeplin <br>Whimsical </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <i class="fas fa-cogs"></i>
+          <div class="text">Basic tools</div>
+          <p>OS: Windows, Linux UBUNTU <br> Text edidor: VS code <br>Terminal: Powershell, GitBash <br>Shema: Draw DB</p>
+        </div>
       </div>
     </div>
-  
-  <div class="container-flex mt-3">
-      <div class="cards">        
-        <div class="card-category mb-0" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url()">
-          <div class="container">
-            <div class="footer-card">
-            </div> 
-          </div>
-        </div>        
-      </div>
-    </div>
-  <div class="container-flex mt-3">
-      <div class="cards">        
-        <div class="card-category mb-0" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url()">
-          <div class="container">
-            <div class="footer-card">
-            </div> 
-          </div>
-        </div>        
-      </div>
     </div>
   </div>
-</div>
-</section>
+  </section>
 <%= render 'shared/footer' %>

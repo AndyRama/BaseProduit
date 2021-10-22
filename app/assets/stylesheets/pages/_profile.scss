@@ -1,7 +1,7 @@
 /* about section styling */
-.about .title::after {
-  content: "";
-}
+// .about .title::after {
+//   content: "";
+// }
 
 .about{
   background-color: white;
@@ -20,6 +20,7 @@
   width: 524px;
   object-fit: cover;
   border-radius: 6px;
+  margin-top: 30px;
 }
 .about .about-content .right {
   width: 55%;
@@ -53,6 +54,7 @@
 }
 
 .about .about-content,
+.competences .comp-content,
 .contact .contact-content {
   display        : flex;
   flex-wrap      : wrap;

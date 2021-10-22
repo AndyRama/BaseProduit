@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   devise_for :users  
 
-  resources :projects, only:[:show, :index]
+  resources :projects, only:[:show, :index, :home]
   
   get "/projects" => 'projects#index'
   get "/homer" => "pages#homer", as: :homer

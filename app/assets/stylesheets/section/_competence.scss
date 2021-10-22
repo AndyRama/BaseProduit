@@ -1,17 +1,16 @@
-
 /* competences section styling */
 .competences h2 {
 color:#111;
 }
 .competences {
 	color:#fff;
-	background: #fff;
+	background: #f4f4f4;
 }
 .competences .title::before {
 	background: #111;
 }
 .competences .title::after {
-	background: #fff;
+	background: #f4f4f4;
 	content: "Competences";
 }
 .competences .comp-content .card {
