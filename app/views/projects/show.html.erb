@@ -1,7 +1,7 @@
 <%= render'shared/banner-project' %>
 <section class="about" id="about">
   <div class="max-width">
-  <h2 class="title">Conception </h2> 
+  <h2 class="title"><%= @project.name %></h2> 
     <div class="about-content">
       <div class="column left">
        <%= image_tag 'pitch.jpg' %>
@@ -10,10 +10,6 @@
         <div class="text"><span>Objectif</span></div> 
         <p>It is a mobile app allowing divorced parents to map out their time necessary to
            look after kids in common. Using the Family Plan App, divorced parents can make 
-           a schedule that organizes how their kids will spend time with each of them. 
-        </p>
-        <p>
-          <div class="text"><span>Challenge</span></div>
            It is a mobile app allowing divorced parents to map out their time necessary to
            look after kids in common. Using the Family Plan App, divorced parents can make 
            a schedule that organizes how their kids will spend time with each of them. 
@@ -21,6 +17,8 @@
          <p>
            <div class="text"><span>Mvp</span></div>
            It is a mobile app allowing divorced parents to map out their time necessary to
+           look after kids in common. Using the Family Plan App, divorced parents can make 
+           a schedule that organizes how their kids will spend time with each of them. 
            look after kids in common. Using the Family Plan App, divorced parents can make 
            a schedule that organizes how their kids will spend time with each of them. 
         </p>
@@ -36,7 +34,7 @@
       <h2 class="title">Road Map</h2> 
     <div class="about-content">
       <div class="column left">
-        <%= image_tag 'roadmap2.jpg' %>
+        <%= image_tag 'roadmap1.jpg' %>
       </div>
       <div class="column right">
         <div class="text"><span>Users Stories</span></div>
@@ -48,16 +46,11 @@
             look after kids in common. Using the Family Plan App, divorced parents can make.
             It is a mobile app allowing divorced parents to map out their time necessary to
           </p> 
-          <div class="text"><span>Site Map</span></div>
-          <p>
-            look after kids in common. Using the Family Plan App, divorced parents can make.
-          </p> 
           <div class="text"><span>Dashboard</span></div>
           <p>ook after kids in common. Using the Family Plan App, divorced parents can make   
             It is a mobile app allowing divorced parents to map out their time necessary to</p> 
           <a class="btn btn" href="#">User stories</a>
           <a class="btn btn" href="#">Shema DB</a>
-          <a class="btn btn" href="#">Map</a>
           <a class="btn btn" href="#">Dashboard</a>
       </div>
     </div>
@@ -69,7 +62,7 @@
     <h2 class="title">Stack techno.</h2>
     <div class="about-content">
       <div class="column left">
-        <%= image_tag 'https://www.wallpapertip.com/wmimgs/83-838362_web-developer.jpg' %>
+        <%= image_tag 'stack.jpg' %>
       </div>
       <div class="column right">
         <div class="text"><span>Ruby on Rails</span></div>
@@ -96,10 +89,10 @@
     <h2 class="title">Conclusion</h2>  
     <div class="about-content">
       <div class="column left">
-        <%= image_tag 'https://www.wallpapertip.com/wmimgs/83-838362_web-developer.jpg' %>
-      </div>
+        <%= image_tag @project.photo ,class:'img'%>
+      </div>          
       <div class="column right">
-        <div class="text"><span>Objectif</span></div>
+        <div class="text"><span>Challenge</span></div>
           <p>It is a mobile app allowing divorced parents to map out their time necessary to
             look after kids in common. Using the Family Plan App, divorced parents can make 
             a schedule that organizes how their kids will spend time with each of them.
@@ -109,7 +102,7 @@
            look after kids in common. Using the Family Plan App, divorced parents can make 
            a schedule that organizes how their kids will spend time with each of them. 
         </p>
-        <div class="text"><span>Amélioration previsionnelle</span></div>
+        <div class="text"><span>Amélioration potentielle</span></div>
         <p>It is a mobile app allowing divorced parents to map out their time necessary to
            look after kids in common. Using the Family Plan App, divorced parents can make
            a schedule that organizes how their kids will spend time with each of them.    

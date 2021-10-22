@@ -1,10 +1,9 @@
-<%#= render 'shared/banner' %>
-<%#= render 'shared/profile' %>
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://www.wallpapertip.com/wmimgs/160-1604579_web-development.jpg);">
   <div class="container-fluid">
     <h1 class="title">@Project.all</h1>
   </div>
 </div>
+<%= render'shared/navbar-info' %>
 <section class="about" id="about">
   <div class="max-width">
     <h2 class="title">Mes Projets</h2>
@@ -28,5 +27,4 @@
     </div>
   </div>
 </section>
-<%= render'shared/navbar-info' %>
 <%= render 'shared/footer' %>
