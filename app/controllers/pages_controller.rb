@@ -9,7 +9,7 @@ class PagesController < ApplicationController
 
   def test
   end
-
+  
   private
 
   def message_params

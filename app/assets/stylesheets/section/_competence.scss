@@ -4,13 +4,13 @@ color:#111;
 }
 .competences {
 	color:#fff;
-	background: #f4f4f4;
+	background: white;
 }
 .competences .title::before {
 	background: #111;
 }
 .competences .title::after {
-	background: #f4f4f4;
+	background: white;
 	content: "Competences";
 }
 .competences .comp-content .card {

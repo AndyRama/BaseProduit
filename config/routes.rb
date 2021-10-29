@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :projects, only:[:show, :index, :home]
   
   get "/projects" => 'projects#index'
-  get "/homer" => "pages#homer", as: :homer
+  get "/home" => "pages#home", as: :home
   get "/profile" => "pages#profile", as: :profile
   get "/contact" => "pages#contact", as: :contact
   get "/test" => "pages#test", as: :test
